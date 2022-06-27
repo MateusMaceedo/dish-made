@@ -4,11 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>pf-libs</artifactId>
+  <artifactId>pf-apps</artifactId>
   <packaging>pom</packaging>
 
-  <name>libs (parent)</name>
-  <description>Domain modules/libraries parent pom</description>
+  <name>apps (parent)</name>
+  <description>Applications parent pom</description>
+  <modules>
+    <module>pf-monolith</module>
+  </modules>
 
   <parent>
     <artifactId>pratofeito-backend</artifactId>
@@ -16,11 +19,4 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <modules>
-    <module>pf-restaurant</module>
-    <module>pf-courier</module>
-    <module>pf-customer</module>
-    <module>pf-order</module>
-    <module>pf-core-api</module>
-  </modules>
 </project>
